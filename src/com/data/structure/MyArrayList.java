@@ -1,6 +1,6 @@
 package com.data.structure;
 
-public class ArrayList {
+public class MyArrayList {
     private int[] intArray;
     //数组实际有效长度
     private int effectiveLength;
@@ -8,14 +8,14 @@ public class ArrayList {
     private int maxLength;
 
     //默认构造一个长度为50的数组
-    public ArrayList() {
+    public MyArrayList() {
         effectiveLength = 0;
         maxLength = 50;
         intArray = new int[maxLength];
     }
 
     //构造函数，初始化一个长度为length的数组
-    public ArrayList(int length) {
+    public MyArrayList(int length) {
         effectiveLength = 0;
         maxLength = length;
         intArray = new int[maxLength];
@@ -98,7 +98,7 @@ public class ArrayList {
     }
 
     public static void main(String[] args) {
-        ArrayList myarray = new ArrayList(4);
+        MyArrayList myarray = new MyArrayList(4);
         myarray.addElement(1);
         myarray.addElement(2);
         myarray.addElement(3);
